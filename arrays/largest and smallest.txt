@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Hello{
+    public static void main(String args[])
+    {
+        int arr1[]={11,8,3,9,29,41};
+        int n=arr1.length;
+        System.out.println("Largest element "+sortd(arr1,n));
+        System.out.println("Smallest element "+sorta(arr1,n));
+        
+    }
+    static int sortd(int arr[], int n)
+    {
+        Arrays.sort(arr);
+        return arr[n-1];
+    }
+    static int sorta(int arr[], int n)
+    {
+        Arrays.sort(arr);
+        return arr[0];
+    }
+}
